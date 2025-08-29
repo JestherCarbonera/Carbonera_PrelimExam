@@ -1,0 +1,6 @@
+- name: Install Java
+  hosts: MNServers
+  become: true
+  tasks:
+  - name: installing Java on MN1
+    apt: name=openjdk-11-jdk update-cache=yes state=latest
