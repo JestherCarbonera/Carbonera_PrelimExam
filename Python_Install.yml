@@ -1,0 +1,6 @@
+- name: Install Java
+ hosts: MNServers
+ become: true
+ tasks:
+  - name: installing Java
+    apt: name=python3 update-cache=yes state=latest
